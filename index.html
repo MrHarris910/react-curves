@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Oxygen;
+        color: white;
+        background: #202731;
+        overflow-x: hidden;
+      }
+      section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 100px 20vw;
+      }
+      .blue {
+        background: blue;
+      }
+      .red {
+        background: red;
+      }
+      .pink {
+        background: #FA7268;
+      }
+
+      .dark {
+        background: darkblue;
+      }
+      .curve {
+        position: absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+      }
+      .curve::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: #202731;
+        transform: translate(85%, 60%);
+
+
+      }
+      .curve::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: blue;
+        transform: translate(-4%, 40%);
+        z-index: -1;
+
+      }
+      .bubble::after {
+        content: '';
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 50% 100%;
+        position: absolute;
+        bottom: 0;
+        height: 85%;
+        width: 100%;
+        background-color: #0f0f10;
+        z-index: -1;
+      }
+      .wave svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      }
+      .wave .shape-fill {
+        fill: #1d1d1d;
+      }
+      .spacer {
+        aspect-ratio: 900/600;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      .layer1 {
+        background-image: url('./layer1.svg');
+      }
+      .layer2 {
+        background-image: url('./layer2.svg');
+
+      }
+      .flip {
+        transform: rotate(180deg)
+      }
+    </style>
+</head>
+<body>
+    
+    <section class="blue">
+        <h1>Nice Curves</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A cum reprehenderit aut, repudiandae earum sunt ex rerum ullam reiciendis iusto saepe nemo iste libero quisquam qui aperiam. Itaque, laboriosam aliquid.</p>
+        <div class="curve"></div>
+    </section>
+    <section class="bubble">
+        <h1>Nice Curves</h1>
+        <p>Illum et quia, reiciendis iusto ullam aspernatur culpa iure sequi vero corrupti omnis doloribus qui quibusdam, cupiditate incidunt, possimus atque? Accusamus exercitationem vero eligendi iste temporibus facere dicta ipsum atque.</p>
+    </section>
+    <section class="dark">
+        <h1>Nice Curves</h1>
+        <p>Reprehenderit beatae ducimus ipsa eaque quae earum repellat totam impedit illo officia perferendis, ullam nihil hic qui eos, magni modi itaque explicabo facilis corrupti iste autem omnis! Quos, quia voluptas?</p>
+    </section>
+    <section class="red">
+        <h1>Nice Curves</h1>
+        <p>Et, corrupti delectus reprehenderit beatae vero inventore voluptas? Harum provident ad fugit beatae distinctio adipisci qui aliquam ut pariatur, corrupti quo, laborum similique! Exercitationem voluptatem, nisi eius praesentium sequi aliquam.</p>
+        <div class="wave">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+      </div>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+      <section>
+        <h1>Nice Curves</h1>
+        <p>Molestias nam vero natus adipisci ullam sunt delectus sequi tempore architecto eligendi, quas dolores rem iste omnis velit esse aperiam officia vel accusamus ea inventore et reprehenderit. Quam, consectetur dolore.</p>
+      </section>
+
+      <div class="spacer layer2 flip"></div>
+
+    <section class="pink">
+        <h1>Nice Curves</h1>
+        <p>Necessitatibus id iure expedita at esse facere rerum dolor adipisci accusantium sit iste error voluptate molestias incidunt reiciendis similique nihil, dolorum totam reprehenderit. Dignissimos molestias soluta neque iusto modi optio.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Expedita veniam eos error suscipit harum, similique vel sapiente architecto, reprehenderit alias neque ea dolor doloribus eveniet nam velit culpa iusto delectus fugiat quis. Eos incidunt voluptate repellendus consectetur eius?</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Sint rem voluptates consequatur praesentium a odio, illo libero vero asperiores nostrum iste sequi distinctio obcaecati in ipsam earum ratione officiis aliquid veniam ut? Et laudantium possimus a provident perferendis.</p>
+    </section>
+
+
+</body>
+</html>
+
+
+  </body>
+</html>
